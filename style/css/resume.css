@@ -1,4 +1,7 @@
 /* องค์ประกอบหลัก */
+html,body{
+    overflow-x: hidden;
+}
 html{
     scroll-behavior:smooth;
 }
@@ -79,13 +82,14 @@ li{
 
 /* หัวเว็บ */
 .masthead{
+    overflow: auto;
     padding-top: calc(6rem + 74px);
     padding-bottom: 6rem;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
-    background-image:url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+    background-image:url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
 }
 .image{
     border-radius: 10px;
