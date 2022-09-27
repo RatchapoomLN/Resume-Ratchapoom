@@ -24,7 +24,7 @@ footer{
     font-size: 20px;
     transition: all 0.5s ease;
 }
-@media(min-width:992px) {
+@media(min-width:900px) {
     .navbar{
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
@@ -50,16 +50,15 @@ footer{
     color: rgb(0, 0, 0);
     transition: all 0.5s ease;
 }
-@media(min-width:992px) {
+@media(min-width:900px) {
 .nav-text:hover{
     text-shadow: 10px 0px 0px black;
     color: rgba(255, 255, 255, 0);
 }
-}
-
 ul{
     right: 3rem;
     position: absolute;
+}
 }
 li{
     margin: 0.2rem;
@@ -77,6 +76,73 @@ li{
     background-color: rgb(31, 158, 255);
     font-size: 18px;
 }
+.navbarResponsive{
+    align-items: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+/* เมนู */
+.menu{
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+.navbarResponsive.active{
+    height: 310px;
+}
+.bx-menu-alt-right.hid{
+    opacity: 0;
+    transition: all 0.5 ease;
+}
+.bx-x.hid{
+    top: 9px;
+    transition: all 0.5s ease;
+}
+@media(max-width:900px) {
+    .menu{
+        display: block;
+        position: fixed;
+        top: 5px;
+        cursor: pointer;
+        right: 10px;
+    }
+    .navbarResponsive{
+        height: 0;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-image: linear-gradient(to right, rgb(0, 255, 255) , rgb(0, 177, 247))!important;
+        transition: all 0.5s ease;
+        overflow: hidden;
+    }
+    .navbarResponsive ul{
+        display: block;
+        width: fit-content;
+        margin: 20px auto 0 auto;/**/
+        text-align: center;
+    }
+    .navbarResponsive ul {
+        opacity: 1;
+    }
+    .navbarResponsive ul li a{
+        margin-bottom: 12px;
+    }
+    .bx-x{
+        display: block;
+        position: fixed;
+        top: -30px;
+        cursor: pointer;
+        right: 9px;
+        font-size: 30px;
+        padding: 5px;
+        transition: all 0.5s ease;
+    }
+    }
 
 /* หัวเว็บ */
 .masthead{
