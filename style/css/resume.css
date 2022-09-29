@@ -352,3 +352,7 @@ color: red;
 .copyright{
     background-color: rgb(43, 140, 155);
 }
+/*model*/
+.img-fluid{
+    cursor: pointer;
+}
